@@ -1,0 +1,72 @@
+section {
+  max-width:325px;
+  margin:0 auto;}
+
+h1, h2, h3, p {font-family: 'Open Sans', Arial, Helvetica, sans-serif;}
+article {
+  width: 100%;
+  min-height:140px;
+  margin:0 10px 10px 0;
+  display:flex;
+}
+#moldes {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/moldesdereposteria.jpg);
+  background-size:cover;
+}
+#basicos {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/utensiliosbasicos.jpg);
+  background-size:cover;
+}
+#electro {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/pequenoelectrodomestico2.jpg);
+  background-size:cover;
+}
+.caja-blanca {
+  background-color:rgba(255,255,255,0.8);
+  padding:5px;
+  width:50%;
+  align-self: flex-end;}
+.caja-blanca h3,
+.galeria-descripcion {color:#67635F}
+.galeria-descripcion {
+  display:none;
+  font-size:0.8em;}
+
+/*----Tablet--*/
+@media screen and (min-width:600px){
+.galeria-bloque {display:flex;}
+section {max-width:75%;}
+.galeria-unacol {width:30%}
+.galeria-doscol {width:70%}
+.caja-blanca {width:100%;}
+.galeria-descripcion {display:block;}
+
+.galeria-doscol-up .caja-blanca, .galeria-doscol-down .caja-blanca {
+  align-self: auto;
+  width: 50%;
+}
+.galeria-doscol-down {justify-content:flex-end;}
+}
+/*---Desktop--*/
+@media screen and (min-width:1240px){
+  section {max-width:90%;}
+  .galeria-bloque {height:540px;}
+  .galeria-unacol {height:100%;}
+  .galeria-doscol article {height:49%;}
+  .galeria-bloque .caja-blanca {align-self: end;}
+  .caja-blanca, .galeria-bloque .caja-blanca {
+    width:73%;
+    position:relative;
+    } /*Para mostrar el triangulo en ::after*/
+  .galeria-doscol .caja-blanca {width:30%;height:50%;}
+  .caja-blanca::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid rgba(255,255,255,0.8);
+    border-right: 100px solid transparent;
+    position: absolute;
+    right: -100px;
+    top: 0;
+}
