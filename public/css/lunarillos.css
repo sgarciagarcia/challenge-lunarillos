@@ -1,20 +1,105 @@
+* {font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;}
+
 body {
   overflow-x:hidden;
+  margin:0;
 }
 h1, h2 {display:none;}
+a {cursor: pointer;}
 section {
   display: flex;
 flex-direction: column;
 margin:0 auto;
 }
 
-h1, h2, h3, p {font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;}
 article {
   min-height:140px;
-  margin:0 10px 10px 0;
+  margin:0;
   display:flex;
 }
+input:focus-visible {
+  outline:1px solid black!important;}
 
+/*---Header--*/
+header {    
+
+  max-width: 80%;
+  margin: 0 auto;
+}
+.sticky-header {  
+  display: flex;
+  background-color:#F8F8F8;
+}
+.logo { 
+height: 50px;
+flex: 0.2;
+display: flex;
+}
+
+
+.logo__item--lunarillos {
+  background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/burger_menu.png) no-repeat center left;
+  flex: 10;
+}
+
+.separador {
+  flex:1;
+}
+.menu {
+  display:flex;
+  flex:1;
+  justify-content:end;
+}
+.menu__item {
+  width:50px;
+}
+.menu__item span {display:none;}
+
+.menu__item--user {
+  background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") 13px 10px no-repeat;
+}
+.menu__item--search {
+  background: #BBB8B6 url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) -304px 12px no-repeat;
+}
+.menu__item--cart {
+  background: #fff url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") -66px 10px no-repeat;
+}
+.menu__item--counter {
+  background-color:#FF5959;
+  display:flex;
+  justify-content: center;
+}
+.menu__item--counter p {
+  color:white;
+  align-self:center;
+}
+.search {
+  position:relative;
+}
+.search form {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.search label {display:none;}
+.search input  {
+  width: 240px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+
+}
+.quick-links {display:none;}
+.logotipo {
+  display:flex;
+  flex:5;
+}
+.logotipo picture {
+  padding:10px;
+  margin-top:30px;
+}
+.navegacion {display:flex;}
+/*---MAIN---*/
 .galeria-bloque {
   width:80%;
   margin: 0 auto;
@@ -50,7 +135,45 @@ article {
 /*----Tablet--*/
 @media screen and (min-width:600px){
   section {width: 90%;}
+  article {margin: 0 0 10px 10px;}
+  /*---header-tablet --*/
+ header{
+    max-width:90%;
+  }
+.quick-links {
+  flex: 5;
+  display:flex;
+}
 
+.quick-links__item{
+flex:5;
+height: 30px;
+margin-top: 60px;
+display:flex;
+justify-content: center;
+}
+.quick-links__item:nth-child(n+2){
+  margin-left:5px;
+}
+.quick-links__item span {
+  background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") -244px 4px no-repeat;
+  width: 30px;
+  display: inline-block;
+  height: 30px;
+
+}
+.quick-links__item a {
+  align-self: center;
+  color:white;
+  font-weight: 700;
+}
+.quick-links__item--new {
+  background: #9faa4d;
+}
+.quick-links__item--promo {
+  background: #8e789d;
+}
+/*---main-tablet--*/
   .galeria-bloque {
   display:flex;
   width:100%;
@@ -98,6 +221,43 @@ height:200px;
 }
 /*---Desktop--*/
 @media screen and (min-width:1240px){
+  /*---Header--*/
+  .logo { 
+ flex: 0.5;
+  }
+
+  .logo__item {
+    flex:3;
+  }
+  .logo__item:nth-child(n+2){
+    margin-left:5px;
+    height: 70px;
+  }
+  .logo__item--lunarillos {
+    background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/icons/maria-lunarillos.png) #FF5959 bottom center no-repeat;
+    flex: 4;
+    height: 140px;
+  }
+  .logo__item--cucute {
+    background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/icons/cucute.png) #6199AF bottom center no-repeat;
+    flex: 3;
+  }
+  .logo__item--mumucho {
+    background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/icons/mumuchu.png) #F6B436 bottom center no-repeat;
+    flex: 3;
+  }
+  .menu__item--leyenda {
+    align-self: center;
+    padding: 6px;
+  }
+  .rrss {
+    flex:2;
+    display:flex;
+  }
+  .menu__item--fb {
+    background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) transparent 0 0 no-repeat;
+  }
+  /*---Main---*/
   section {max-width:90%;}
   .galeria-bloque {height:540px;}
   .galeria-bloque__unacol {height:100%;}
