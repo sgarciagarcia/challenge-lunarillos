@@ -47,7 +47,7 @@ display: flex;
 }
 .menu {
   display:flex;
-  flex:1;
+  flex:1.2;
   justify-content:end;
 }
 .menu__item {
@@ -246,16 +246,41 @@ height:200px;
     background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/icons/mumuchu.png) #F6B436 bottom center no-repeat;
     flex: 3;
   }
+  .menu__ingresar {
+    display:flex;
+    flex:1;
+  }
   .menu__item--leyenda {
     align-self: center;
     padding: 6px;
   }
   .rrss {
-    flex:2;
     display:flex;
+    justify-content: center;
+    align-items: center;
+    flex:0.8;
   }
+  .rrss .menu__item {
+    width:20px;
+    height:20px;
+    margin-left:10px;
+  }
+
   .menu__item--fb {
-    background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) transparent 0 0 no-repeat;
+    background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) transparent -10px -540px no-repeat;
+    margin-left:0;
+  }
+  .menu__item--tw {
+    background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) transparent -43px -540px no-repeat;
+  }
+  .menu__item--ig {
+    background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) transparent -76px -540px no-repeat;
+  }
+  .menu__item--pt {
+    background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) transparent -110px -540px no-repeat;
+  }
+  .menu__item--yt {
+    background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) transparent -185px -540px no-repeat;
   }
   /*---Main---*/
   section {max-width:90%;}
