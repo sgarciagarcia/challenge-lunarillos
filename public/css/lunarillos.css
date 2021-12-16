@@ -50,10 +50,12 @@ display: flex;
   flex:1.2;
   justify-content:end;
 }
-.menu__item {
+.menu__item, .menu__ingresar {
   width:50px;
+  display:flex;
 }
-.menu__item--leyenda {display:none;}
+
+.menu__item--leyenda, .rrss {display:none;}
 
 .menu__item--user {
   background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg") 13px 10px no-repeat;
@@ -251,6 +253,7 @@ height:200px;
     flex:1;
   }
   .menu__item--leyenda {
+    display:flex;
     align-self: center;
     padding: 6px;
   }
