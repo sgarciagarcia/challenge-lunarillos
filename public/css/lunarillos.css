@@ -37,7 +37,13 @@ header {
 }
 .sticky-header {  
   display: flex;
-  background-color:#F8F8F8;
+background-color: #F8F8F8;
+position: fixed;
+width: 90%;
+margin: 0;
+top: 0;
+z-index: 1;
+  
 }
 .logo { 
 height: 50px;
