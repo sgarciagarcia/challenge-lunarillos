@@ -9,15 +9,18 @@ body {
 }
 h1, h2 {display:none;}
 a {cursor: pointer;}
-section {
+.section-container {
   display: flex;
 flex-direction: column;
 margin:0 auto;
-background-color:#f5f5f5;
+
+}
+section {
+  background-color:#f5f5f5;
+width:100%;
 position:relative;
 top:50px;
 }
-
 article {
   min-height:140px;
   margin:10px 0; 
@@ -31,17 +34,19 @@ input:focus-visible {
 
 /*---Header--*/
 header {    
-
-  max-width: 80%;
-  margin: 0 auto;
+width:100%;
 }
+.header-container {
+  max-width: 90%;
+  margin: 0 auto;}
 .sticky-header {  
   display: flex;
 background-color: #F8F8F8;
 position: fixed;
-width: 90%;
+width: 100%;
 margin: 0;
 top: 0;
+left:0;
 z-index: 1;
   
 }
@@ -49,6 +54,7 @@ z-index: 1;
 height: 50px;
 flex: 0.2;
 display: flex;
+margin-left:20px;
 }
 
 
@@ -116,11 +122,26 @@ nav {flex:3;}
 .logotipo picture {
   padding:10px;
   margin-top:30px;
+
 }
-.navegacion {display:flex;}
+.navegacion {
+  display:flex;
+margin-top:80px;}
 .navegacion__item p {display:none;}
 
 /*---MAIN---*/
+
+/*--Slider--*/
+.slider {
+  height: 45vh;
+overflow: hidden;
+display: flex;
+justify-content: center;
+background-color:#ed8569;
+margin-bottom:10px;
+}
+.slider picture {align-self: center;}
+.slider picture img {width:100%;}
 .marcador-seccion {
   position: relative;
   bottom: 50px;
@@ -135,7 +156,7 @@ nav {flex:3;}
 .marcador-seccion picture img {
 width:100%;  
 }
-.marcador-seccion legend {
+.marcador-seccion p {
   text-align:center;
 text-transform:uppercase;
 border-top: 1px solid black;
@@ -177,11 +198,11 @@ font-weight:700;}
 
 /*----Tablet--*/
 @media screen and (min-width:600px){
-  section {width: 90%;}
+  .section-container {width: 90%;}
   article {margin: 0 0 10px 10px;}
   /*---header-tablet --*/
  header{
-    max-width:90%;
+    max-width:100%;
   }
 .quick-links {
   flex: 5;
@@ -219,6 +240,7 @@ justify-content: center;
 
 .logotipo picture:first-child{display:none;}
 .logotipo picture:nth-child(2){display:block;}
+.navegacion {margin-top:50px;}
 /*---main-tablet--*/
   .galeria-bloque {
   display:flex;
@@ -268,6 +290,10 @@ height:200px;
 /*---Desktop--*/
 @media screen and (min-width:1240px){
   /*---Header--*/
+  .sticky-header {
+    width:90%;
+    left:5%;
+  }
   .logo { 
  flex: 0.5;
   }
@@ -330,7 +356,9 @@ height:200px;
     background: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) transparent -185px -540px no-repeat;
   }
   .logotipo {flex:3;}
-  .logotipo picture:nth-child(2){margin-top:100px;}
+  .logotipo picture:nth-child(2){
+    align-self: end;
+    margin-top:100px;}
 
   .navegacion {
     display:flex;
@@ -377,9 +405,9 @@ height:200px;
   background-color:#FF5959;
   }
   /*---Main---*/
-  section {max-width:90%;}
+  .section-container {max-width:90%;}
   .marcador-seccion {
-    max-width:120px;
+    max-width:90px;
   }
   .marcador-seccion legend {
     font-size:1.7em;
