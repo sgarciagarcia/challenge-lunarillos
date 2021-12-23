@@ -211,6 +211,45 @@ bottom: 50px;}
   background-image:url(https://static3.marialunarillos.com/media/wysiwyg/toppers3.jpg);
   background-size:cover;
 }
+.galeria-bloque__unacol--fondant {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/fondant2.jpg);
+  background-size:cover;
+}
+.galeria-bloque__doscol--repos {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/ingredientesreposteria.jpg);
+  background-size:cover;
+}
+.galeria-bloque__doscol--impresion {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/impresionpersonalizada.jpg);
+  background-size:cover;
+}
+
+.galeria-bloque__unacol--purpurina {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/sprinkles3.jpg);
+  background-size:cover;
+}
+.galeria-bloque__doscol--colorantes {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/Colorantes-alimentarios.jpg);
+  background-size:cover;
+}
+.galeria-bloque__doscol--papel {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/papelcomestible.jpg);
+  background-size:cover;
+}
+
+.galeria-bloque__unacol--accesorios {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/pompones.jpg);
+  background-size:cover;
+}
+.galeria-bloque__doscol--tematicas {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/fiestastematicas.jpg);
+  background-size:cover;
+}
+.galeria-bloque__doscol--personajes {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/fiestaspersonajes.jpg);
+  background-size:cover;
+  background-position: center;
+}
 
 .caja-blanca {
   background-color:rgba(255,255,255,0.8);
@@ -240,6 +279,50 @@ color: #fff;
 text-transform: uppercase;
 letter-spacing: 1px;
 }
+.marcas {background: transparent;}
+.marcas-lista, .envio-lista {
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-content:center;
+}
+.marcas-lista__brand, .envio-lista__brand  {
+  -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+margin-left:20px;
+align-self:center;
+max-width:150px;
+}
+.marcas-lista__brand:hover, .envio-lista__brand:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+
+}
+.align-content, .align-content picture {
+  align-content: center;
+  display: flex;
+}
+.envio-lista__item {
+  width:90px;
+  height:70px;
+flex-direction:column;
+justify-content: center;}
+
+  .envio-lista__item span {
+    position:relative;
+    top:70px;
+  }
+  .envio-lista__item:nth-child(1){
+  background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017//images/sprite.svg") 0 -38px no-repeat transparent;
+  }
+  .envio-lista__item:nth-child(1):hover{
+    background: url("https://www.marialunarillos.com/skin/frontend/default/newdesign2017//images/sprite.svg") 0 -107px no-repeat transparent;
+    }
+
 /*----Tablet--*/
 @media screen and (min-width:600px){
   .section-container {width: 90%;}
