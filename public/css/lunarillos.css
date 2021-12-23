@@ -20,6 +20,8 @@ section {
 width:100%;
 position:relative;
 top:50px;
+margin-bottom:100px;
+padding-bottom:10px;
 }
 article {
   min-height:140px;
@@ -142,6 +144,8 @@ margin-bottom:10px;
 }
 .slider picture {align-self: center;}
 .slider picture img {width:100%;}
+/*--*/
+
 .marcador-seccion {
   position: relative;
   bottom: 50px;
@@ -156,14 +160,16 @@ margin-bottom:10px;
 .marcador-seccion picture img {
 width:100%;  
 }
-.marcador-seccion p {
+.titulo-seccion {
   text-align:center;
 text-transform:uppercase;
 border-top: 1px solid black;
 border-bottom: 1px solid black;
-max-width:120px;
 margin: 10px auto 0;
-font-weight:700;}
+font-weight:700;
+font-size:1.8em;
+position: relative;
+bottom: 50px;}
 .galeria-bloque {
   width:80%;
   margin: 0 auto;
@@ -181,6 +187,31 @@ font-weight:700;}
   background-image:url(https://static3.marialunarillos.com/media/wysiwyg/pequenoelectrodomestico2.jpg);
   background-size:cover;
 }
+.galeria-bloque__unacol--galletas {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/cortadoresgalletas2.jpg);
+  background-size:cover;
+}
+.galeria-bloque__doscol--cajas {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/cajas3.jpg);
+  background-size:cover;
+}
+.galeria-bloque__doscol--capsulas {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/capsulas-cupcakes.jpg);
+  background-size:cover;
+}
+.galeria-bloque__unacol--ceramica {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/stands.jpg);
+  background-size:cover;
+}
+.galeria-bloque__doscol--pan {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/banetones.jpg);
+  background-size:cover;
+}
+.galeria-bloque__doscol--toppers {
+  background-image:url(https://static3.marialunarillos.com/media/wysiwyg/toppers3.jpg);
+  background-size:cover;
+}
+
 .caja-blanca {
   background-color:rgba(255,255,255,0.8);
   padding:15px;
@@ -195,11 +226,24 @@ font-weight:700;}
 .caja-blanca__descripcion {
   display:none;}
 
-
+button {
+  border: none;
+  display: flex;
+  background: transparent;
+  margin: 20px auto;
+}
+button a {
+  background: #FF5959;
+padding: 15px 30px;
+display: inline-block;
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
 /*----Tablet--*/
 @media screen and (min-width:600px){
   .section-container {width: 90%;}
-  article {margin: 0 0 10px 10px;}
+  article {margin: 10px 0 10px 10px;}
   /*---header-tablet --*/
  header{
     max-width:100%;
@@ -413,6 +457,7 @@ height:200px;
     font-size:1.7em;
     max-width: none;;
   }
+  .slider {height:65vh}
   .galeria-bloque {height:540px;}
   .galeria-bloque__unacol {height:100%;}
   .galeria-bloque__doscol > div {height:49%;}
